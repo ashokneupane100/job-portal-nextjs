@@ -1,1 +1,0 @@
-ALTER TABLE `jobs` MODIFY COLUMN `expires_at` timestamp;

@@ -1,9 +1,15 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   images: {
-    remotePatterns: [{ hostname: "we2plp04mq.ufs.sh", protocol: "https" }],
+    remotePatterns: [
+      { hostname: "**.ufs.sh", protocol: "https" },
+      { hostname: "utfs.io", protocol: "https" },
+    ],
   },
 };
 
